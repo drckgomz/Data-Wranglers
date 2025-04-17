@@ -1,6 +1,6 @@
 # Data-Wranglers Data Population, Queries and Automation
 
-## Stored Procedure Get_Daily_Flight_Schedule
+## Stored Procedure `Get_Daily_Flight_Schedule`
 ### Purpose
 Retrieves all flights scheduled for the current day along with details such as departure/arrival times, cities, flight status, plane status, and assigned crew.
 
