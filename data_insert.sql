@@ -1,6 +1,20 @@
-INSERT INTO passengers VALUES (1, 'Smith', 'Alice', 'alice@example.com', '1234567890', 10001);
-INSERT INTO passengers VALUES (2, 'Brown', 'Bob', 'bob@example.com', '0987654321', 10002);
-INSERT INTO passengers VALUES (3, 'Davis', 'Charlie', 'charlie@example.com', '1122334455', 10003);
+-- passenger population
+INSERT INTO passengers VALUES (1, 'Dunn', 'Stacy', 'sdunn@gmail.com', '(712)653-2869', 906455661);
+INSERT INTO passengers VALUES (2, 'Brown', 'Carlos', 'cbrown@gmail.com', '(486)927-7899', 186664624);
+INSERT INTO passengers VALUES (3, 'Gilbert', 'Norman', 'ngilbert@gmail.com', '(572)996-8521', 263354174);
+INSERT INTO passengers VALUES (4, 'Cummings', 'Lori', 'lcummings@gmail.com', '(873)737-8740', 498293094);
+INSERT INTO passengers VALUES (5, 'Dennis', 'Michaela', 'mdennis@gmail.com', '(637)600-2748', 615558862);
+INSERT INTO passengers VALUES (6, 'Contreras', 'Kevin', 'kcontreras@gmail.com', '(201)271-9364', 905789321);
+INSERT INTO passengers VALUES (7, 'Garcia', 'Monica', 'mgarcia@gmail.com', '(894)951-6417', 122433539);
+INSERT INTO passengers VALUES (8, 'Rowe', 'Stephanie', 'srowe@gmail.com', '(756)229-1299', 953725389);
+INSERT INTO passengers VALUES (9, 'Smith', 'Jose', 'jsmith@gmail.com', '(449)541-4776', 392989190);
+INSERT INTO passengers VALUES (10, 'Ward', 'Keith', 'kward@gmail.com', '(823)578-3979', 531311788);
+INSERT INTO passengers VALUES (11, 'David', 'Kenneth', 'kdavid@gmail.com', '(660)473-7766', 577234641);
+INSERT INTO passengers VALUES (12, 'Boyd', 'Tammy', 'tboyd@gmail.com', '(456)220-3779', 627934157);
+INSERT INTO passengers VALUES (13, 'Hernandez', 'Christina', 'chernandez@gmail.com', '(475)572-5190', 295912112);
+INSERT INTO passengers VALUES (14, 'Salinas', 'Karen', 'ksalinas@gmail.com', '(349)477-5020', 648745203);
+INSERT INTO passengers VALUES (15, 'Sanchez', 'Megan', 'msanchez@gmail.com', '(446)297-7598', 897897041);
+
 INSERT INTO planes VALUES (1, 'Boeing 737', 12345, 180, '2025-03-15', 'Operational');
 INSERT INTO planes VALUES (2, 'Airbus A320', 12346, 160, '2025-03-10', 'Operational');
 INSERT INTO planes VALUES (3, 'Boeing 777', 12347, 300, '2025-03-05', 'Maintenance');
