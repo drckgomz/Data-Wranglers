@@ -13,14 +13,14 @@ INSERT INTO crew_members (
   crew_member_phone_number
 )
 VALUES (
-  504, -- Picked 504 to avoid clashing with the sample data (501–503)
+  504,
   'Turner',
   'Paige',
   987654321,
-  'Pilot', -- crew_role must be a string (varchar), not an integer like 5
+  'Pilot',
   '2013-04-14',
   'pturner777@gmail.com',
-  '1234567890' -- remove parentheses and dashes for uniform formatting
+  '1234567890'
 );
 
 -- Create 
