@@ -45,7 +45,7 @@ CREATE TABLE `crew_members` (
 `crew_member_last_name` varchar(50) DEFAULT NULL,
 `crew_member_first_name` varchar(50) DEFAULT NULL,
 `passport_number` int DEFAULT NULL,
-`crew_role` int NOT NULL,
+`crew_role` varchar(30) NOT NULL,
 `hire_date` date DEFAULT NULL,
 `crew_member_email` varchar(100) DEFAULT NULL,
 `crew_member_phone_number` varchar(15) DEFAULT NULL,
