@@ -94,3 +94,9 @@ BEGIN
 END;
 //
 DELIMITER ;
+
+-- Show tables
+SHOW TABLES;
+
+-- Show triggers
+SHOW TRIGGERS FROM SkyRunner_Airlines_db;

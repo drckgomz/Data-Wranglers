@@ -1,5 +1,3 @@
-DELETE FROM flights WHERE flight_id = 999;
-
 INSERT INTO passengers VALUES (1, 'Smith', 'Alice', 'alice@example.com', '1234567890', 10001);
 INSERT INTO passengers VALUES (2, 'Brown', 'Bob', 'bob@example.com', '0987654321', 10002);
 INSERT INTO passengers VALUES (3, 'Davis', 'Charlie', 'charlie@example.com', '1122334455', 10003);
