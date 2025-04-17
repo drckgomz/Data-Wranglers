@@ -1,19 +1,21 @@
-USE SkyRunner_Airlines_db
+USE SkyRunner_Airlines_db;
+
 -- Stored Procedure: Get_Daily_Flight_Schedule
 -- Purpose: Retrieves all flights scheduled for current day with their assigned crew, plane and flight status
-DELIMITER //
+
+DROP PROCEDURE IF EXISTS Get_Daily_Flight_Schedule;
 
 CREATE PROCEDURE Get_Daily_Flight_Schedule()
 BEGIN
     -- Select all flights scheduled for the current day with their details
     SELECT 
         f.flight_id,
-		p.plane_id,
         f.departure_time,
         f.arrival_time,
         f.origin_city,
         f.destination_city,
         f.flight_status,
+        f.plane_id,
         p.operation_status AS plane_status,
         cd.crew_details_id
     FROM 
@@ -26,9 +28,7 @@ BEGIN
         DATE(f.departure_time) = CURDATE()
     ORDER BY 
         f.departure_time;
-END //
-
-DELIMITER ;
+END;
 
 -- Example usage:
 CALL Get_Daily_Flight_Schedule();
