@@ -88,17 +88,11 @@ DROP TABLE IF EXISTS `bookings`;
 CREATE TABLE `bookings` (
 `booking_id` int NOT NULL,
 `passenger_id` int NOT NULL,
-`flight_id` int NOT NULL,
-`seat_number` varchar(4) DEFAULT NULL,
-`check-in_status` varchar(20) DEFAULT NULL,
 `booking_date` date DEFAULT NULL,
 PRIMARY KEY (`booking_id`),
 KEY `passenger_id` (`passenger_id`),
-KEY `flight_id` (`flight_id`),
 CONSTRAINT `bookings_ibfk_1` FOREIGN KEY (`passenger_id`) REFERENCES 
-`passengers` (`passenger_id`),
-CONSTRAINT `bookings_ibfk_2` FOREIGN KEY (`flight_id`) REFERENCES 
-`flights` (`flight_id`)
+`passengers` (`passenger_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 --
@@ -115,6 +109,8 @@ CREATE TABLE `booking_details` (
 `booking_details_id` int NOT NULL,
 `booking_id` int NOT NULL,
 `flight_id` int NOT NULL,
+`seat_number` varchar(4) DEFAULT NULL,
+`check-in_status` varchar(20) DEFAULT NULL
 PRIMARY KEY (`booking_details_id`),
 KEY `booking_id` (`booking_id`),
 KEY `flight_id` (`flight_id`),
