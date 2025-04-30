@@ -64,13 +64,13 @@ DROP TABLE IF EXISTS `crew_details`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `crew_details` (
 `crew_details_id` int NOT NULL,
-`crew_member_id` int NOT NULL,
+`booking_id` int NOT NULL,
 `flight_id` int NOT NULL,
 PRIMARY KEY (`crew_details_id`),
-KEY `crew_member_id` (`crew_member_id`),
+KEY `booking_id` (`booking_id`),
 KEY `flight_id` (`flight_id`),
-CONSTRAINT `crew_details_ibfk_1` FOREIGN KEY (`crew_member_id`) REFERENCES
-`crew_members` (`crew_member_id`),
+CONSTRAINT `crew_details_ibfk_1` FOREIGN KEY (`booking_id`) REFERENCES
+`bookings` (`booking_id`),
 CONSTRAINT `crew_details_ibfk_2` FOREIGN KEY (`flight_id`) REFERENCES
 `flights` (`flight_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

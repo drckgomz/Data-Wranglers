@@ -12,11 +12,14 @@ HAVING COUNT(booking_id) < 20
 ORDER BY flight_id;
 -- booking id count sorted by flight and showing flights with less than 20 passengers
 
-SELECT crew_members.crew_member_first_name, crew_members.crew_member_last_name, crew_details.flight_id
-FROM crew_members
-INNER JOIN crew_details
-ON crew_members.crew_member_id = crew_details.crew_details_id
-ORDER BY crew_details.flight_id;
+SELECT
+  cm.crew_member_first_name,
+  cm.crew_member_last_name,
+  cd.flight_id
+FROM crew_members cm
+JOIN crew_details cd
+  ON cm.crew_member_id = cd.crew_member_id
+ORDER BY cd.flight_id;
 -- displays first and last crew member names with their flight_id
 
 SELECT p.passenger_id, b.`check-in_status`
