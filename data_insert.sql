@@ -179,6 +179,33 @@ INSERT INTO bookings VALUES (2047, 147, 114, '24B', 'Checked In', '2025-04-23');
 INSERT INTO booking_details VALUES (2001, 1001, 101);
 INSERT INTO booking_details VALUES (2002, 1002, 102);
 INSERT INTO booking_details VALUES (2003, 1003, 103);
+INSERT INTO booking_details VALUES (2004, 1004, 104);
+INSERT INTO booking_details VALUES (2005, 1005, 105);
+INSERT INTO booking_details VALUES (2006, 1006, 106);
+INSERT INTO booking_details VALUES (2007, 1007, 107);
+INSERT INTO booking_details VALUES (2008, 1008, 108);
+INSERT INTO booking_details VALUES (2009, 1009, 109);
+INSERT INTO booking_details VALUES (2010, 1010, 110);
+INSERT INTO booking_details VALUES (2011, 1011, 111);
+INSERT INTO booking_details VALUES (2012, 1012, 112);
+INSERT INTO booking_details VALUES (2013, 1013, 113);
+INSERT INTO booking_details VALUES (2014, 1014, 114);
+INSERT INTO booking_details VALUES (2015, 1015, 115);
+INSERT INTO booking_details VALUES (2016, 1016, 116);
+INSERT INTO booking_details VALUES (2017, 1017, 117);
+INSERT INTO booking_details VALUES (2018, 1018, 118);
+INSERT INTO booking_details VALUES (2019, 1019, 119);
+INSERT INTO booking_details VALUES (2020, 1020, 120);
+INSERT INTO booking_details VALUES (2021, 1021, 121);
+INSERT INTO booking_details VALUES (2022, 1022, 122);
+INSERT INTO booking_details VALUES (2023, 1023, 123);
+INSERT INTO booking_details VALUES (2024, 1024, 124);
+INSERT INTO booking_details VALUES (2025, 1025, 125);
+INSERT INTO booking_details VALUES (2026, 1026, 126);
+INSERT INTO booking_details VALUES (2027, 1027, 127);
+INSERT INTO booking_details VALUES (2028, 1028, 128);
+INSERT INTO booking_details VALUES (2029, 1029, 129);
+INSERT INTO booking_details VALUES (2030, 1030, 130);
 
 
 -- Crew Members Data
