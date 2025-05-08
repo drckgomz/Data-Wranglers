@@ -95,6 +95,21 @@ INSERT INTO flights VALUES (112, 12, '2025-05-02', '2025-05-02', 'IAH', 'SAT', '
 INSERT INTO flights VALUES (113, 13, '2025-04-26', '2025-04-26', 'ATL', 'SAT', 'Delayed');
 INSERT INTO flights VALUES (114, 14, '2025-04-28', '2025-04-28', 'LAX', 'SAT', 'On Time');
 INSERT INTO flights VALUES (115, 15, '2025-04-30', '2025-04-30', 'ORD', 'SAT', 'Cancelled');
+INSERT INTO flights VALUES (116, 1, '2025-05-03', '2025-05-03', 'DFW', 'SAT', 'On Time');
+INSERT INTO flights VALUES (117, 2, '2025-05-03', '2025-05-03', 'IAH', 'SAT', 'On Time');
+INSERT INTO flights VALUES (118, 3, '2025-05-04', '2025-05-04', 'LAX', 'SAT', 'Cancelled');
+INSERT INTO flights VALUES (119, 4, '2025-05-04', '2025-05-04', 'PHX', 'SAT', 'On Time');
+INSERT INTO flights VALUES (120, 5, '2025-05-05', '2025-05-05', 'ORD', 'SAT', 'On Time');
+INSERT INTO flights VALUES (121, 6, '2025-05-05', '2025-05-05', 'SAT', 'MIA', 'On Time');
+INSERT INTO flights VALUES (122, 7, '2025-05-06', '2025-05-06', 'MIA', 'SAT', 'On Time');
+INSERT INTO flights VALUES (123, 8, '2025-05-06', '2025-05-06', 'SAT', 'SEA', 'Delayed');
+INSERT INTO flights VALUES (124, 9, '2025-05-07', '2025-05-07', 'SEA', 'SAT', 'On Time');
+INSERT INTO flights VALUES (125, 10, '2025-05-07', '2025-05-07', 'SAT', 'BOS', 'On Time');
+INSERT INTO flights VALUES (126, 11, '2025-05-08', '2025-05-08', 'BOS', 'ORD', 'On Time');
+INSERT INTO flights VALUES (127, 12, '2025-05-08', '2025-05-08', 'DFW', 'LAX', 'On Time');
+INSERT INTO flights VALUES (128, 13, '2025-05-09', '2025-05-09', 'ATL', 'MIA', 'Delayed');
+INSERT INTO flights VALUES (129, 14, '2025-05-09', '2025-05-09', 'LAX', 'SEA', 'On Time');
+INSERT INTO flights VALUES (130, 15, '2025-05-10', '2025-05-10', 'ORD', 'BOS', 'On Time');
 
 SELECT * FROM flights;
 
