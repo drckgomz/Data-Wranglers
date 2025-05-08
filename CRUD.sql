@@ -59,6 +59,7 @@ HAVING
 ORDER BY
     bd.booking_id;
 
+
 -- 5. This query selects all flights that meet the condition in the subquery
 SELECT *
 FROM flights
@@ -67,7 +68,35 @@ WHERE plane_id IN (
     FROM planes
     WHERE operation_status = 'Operational'
 );
-  
+
+
+-- 6. Demonstration of log_Maintenace trigger.
+-- First, let's view the current plane data to pick a plane to update
+SELECT plane_id, aircraft_type, last_maintenance, operation_status 
+FROM planes 
+WHERE plane_id = 3;
+
+-- Now let's update plane #3 which is currently in Maintenance status
+-- We'll mark its maintenance as complete and change status to Operational
+UPDATE planes 
+SET 
+  last_maintenance = CURDATE(),
+  operation_status = 'Operational'
+WHERE plane_id = 3;
+
+-- Let's verify the changes were made
+SELECT plane_id, aircraft_type, last_maintenance, operation_status 
+FROM planes 
+WHERE plane_id = 3;
+
+-- Finally, let's check the maintenance_log table to see if the trigger worked
+SELECT * FROM maintenance_log 
+WHERE plane_id = 3
+ORDER BY change_time DESC
+LIMIT 1;
+
+
+-- 7. Stored Procedures: Get_Daily_Flight_Schedule() and Get_Weekly_Crew_Schedule().
 
 -- The stored procedure Get_Daily_Flight_schedule() makes simple use of retrieving all of the necessary 
 -- flight information for the current day. This procedure will display the flight_ids their departure and arrival dates, 
