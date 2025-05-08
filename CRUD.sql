@@ -58,6 +58,15 @@ HAVING
     COUNT(*) > 1
 ORDER BY
     bd.booking_id;
+
+-- 5. This query selects all flights that meet the condition in the subquery
+SELECT *
+FROM flights
+WHERE plane_id IN (
+    SELECT plane_id
+    FROM planes
+    WHERE operation_status = 'Operational'
+);
   
 
 -- The stored procedure Get_Daily_Flight_schedule() makes simple use of retrieving all of the necessary 
