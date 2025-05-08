@@ -73,9 +73,17 @@ INSERT INTO planes VALUES (12, 'Boeing 777', 12356, 300, '2025-04-15', 'Operatio
 INSERT INTO planes VALUES (13, 'Boeing 737', 12357, 180, '2025-04-01', 'Maintenance');
 INSERT INTO planes VALUES (14, 'Airbus A320', 12358, 160, '2025-03-18', 'Operational');
 INSERT INTO planes VALUES (15, 'Boeing 777', 12359, 300, '2025-04-07', 'Operational');
+INSERT INTO planes VALUES (16, 'Boeing 737', 12360, 180, '2025-04-11', 'Operational');
+INSERT INTO planes VALUES (17, 'Airbus A320', 12361, 160, '2025-03-30', 'Operational');
+INSERT INTO planes VALUES (18, 'Boeing 777', 12362, 300, '2025-04-03', 'Maintenance');
+INSERT INTO planes VALUES (19, 'Boeing 737', 12363, 180, '2025-03-22', 'Operational');
+INSERT INTO planes VALUES (20, 'Airbus A320', 12364, 160, '2025-04-06', 'Operational');
+INSERT INTO planes VALUES (21, 'Boeing 777', 12365, 300, '2025-03-29', 'Operational');
+INSERT INTO planes VALUES (22, 'Boeing 737', 12366, 180, '2025-04-09', 'Operational');
+INSERT INTO planes VALUES (23, 'Airbus A320', 12367, 160, '2025-03-31', 'Maintenance');
+INSERT INTO planes VALUES (24, 'Boeing 777', 12368, 300, '2025-04-04', 'Operational');
 
 SELECT * FROM planes;
-
 
 -- Flights Data
 INSERT INTO flights VALUES (101, 1, '2025-04-20', '2025-04-20', 'JFK', 'MIA', 'On Time');
