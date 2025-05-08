@@ -35,6 +35,9 @@ FROM
 INNER JOIN
   bookings AS b ON p.passenger_id = b.passenger_id;
 
+-- Shows created view
+SELECT * FROM passenger_and_booking;
+
 -- Read
 SELECT
   crew_member_first_name,
